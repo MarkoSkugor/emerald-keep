@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'blackcastle';
+    src: url('/fonts/blackcastlemf-webfont.woff2') format('woff2'),
+         url('/fonts/blackcastlemf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @layer base {
     :not(pre) > code {
         @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;

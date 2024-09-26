@@ -10,7 +10,7 @@ const cards = [
 ];
 
 const contextExplainer = `
-The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
+The card below is rendered on the server based on the value of \`process.env.CONTEXT\`
 ([docs](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata)):
 `;
 
@@ -31,28 +31,25 @@ export default function Page() {
     return (
         <main className="flex flex-col gap-8 sm:gap-16">
             <section className="flex flex-col items-start gap-3 sm:gap-4">
-                <ContextAlert />
-                <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
-                <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
                 <Link
                     href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="btn btn-lg btn-primary sm:btn-wide"
+                    className="btn btn-lg btn-primary font-blackcastle sm:btn-wide"
+                >
+                    Read the Docs
+                </Link>
+                <Link
+                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    className="btn btn-lg btn-secondary font-blackcastle sm:btn-wide"
+                >
+                    Read the Docs
+                </Link>
+                <Link
+                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    className="btn btn-lg btn-info font-blackcastle sm:btn-wide"
                 >
                     Read the Docs
                 </Link>
             </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
-                </section>
-            )}
-            <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
-            </section>
-            {/* !!cards?.length && <CardsGrid cards={cards} /> */}
         </main>
     );
 }
