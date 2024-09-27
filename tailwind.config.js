@@ -14,7 +14,7 @@ module.exports = {
             },
             fontFamily: {
                 blackcastle: ['blackcastle', 'sans-serif'],
-            }
+            },
         }
     },
     daisyui: {

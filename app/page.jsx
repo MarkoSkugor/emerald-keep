@@ -27,6 +27,31 @@ And as always with dynamic content, beware of layout shifts & flicker! (here, we
 
 const ctx = getNetlifyContext();
 
+const PortalShadows = ({ count }) => {
+    const base = 1.2; // You can adjust the base to control how fast the exponential growth occurs
+
+    return (
+      <>
+        {Array.from({ length: count }, (_, i) => {
+          // Calculate the exponential scale value
+          const expScale = Math.pow(base, i); // base raised to the power of i
+          const size = expScale * 4; // Multiply by 4 to adjust the size
+
+          return (
+            <div
+              key={i}
+              className="portal-shadow"
+              style={{
+                width: `${size}rem`,
+                height: `${size}rem`,
+              }}
+            ></div>
+          );
+        })}
+      </>
+    );
+  };
+
 export default function Page() {
     return (
         <main className="h-screen w-screen flex flex-col gap-8 sm:gap-16">
@@ -36,28 +61,33 @@ export default function Page() {
                 </div>
                 <div className="absolute top-0 left-0 h-full w-full bg-videoOverlay opacity-80"></div>
             </section>
-            <section className="h-full flex flex-col items-center justify-center gap-3 sm:gap-4 py-8 z-10">
-                <img className="min-h-0" src="/images/portal.png"></img>
+            <section className="h-full overflow-hidden flex flex-col items-center justify-center gap-3 sm:gap-4 py-8 z-10">
+                <div className="min-h-0 flex items-center justify-center relative">
+                    <PortalShadows count={50} />
+                    <img className="absolute h-full rotating-portal" src="/images/portal-background.png"></img>
+                    <img className="h-full" src="/images/portal.png"></img>
+                </div>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="https://www.instagram.com/theemeraldkeep/"
+                    target="_blank"
                     className="btn-primary btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
                     Instagram
                 </Link>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="javascript:void(0)"
                     className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
                     About
                 </Link>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="javascript:void(0)"
                     className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
                     Gallery
                 </Link>
                 <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    href="javascript:void(0)"
                     className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
                     Events
