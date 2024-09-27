@@ -6,8 +6,16 @@
 
 @font-face {
     font-family: 'blackcastle';
-    src: url('/fonts/blackcastlemf-webfont.woff2') format('woff2'),
-         url('/fonts/blackcastlemf-webfont.woff') format('woff');
+    src: url('/fonts/BlackCastle.woff2') format('woff2'),
+         url('/fonts/BlackCastle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blackcastleshadow';
+    src: url('/fonts/BlackCastleShadow.woff2') format('woff2'),
+         url('/fonts/BlackCastleShadow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -59,9 +67,9 @@ a {
 
   @keyframes rotate {
     0% {
-        transform: rotate(0deg);  /* Start at 0 degrees */
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);  /* End at 360 degrees (one full rotation) */
+        transform: rotate(360deg);
     }
 }
