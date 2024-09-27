@@ -12,11 +12,11 @@ const AboutModal = () => {
 
       <dialog id="about-modal" className="modal modal-bottom sm:modal-middle ">
         <div className="modal-box font-augusta bg-stone-900 text-stone-100">
-          <h3 className="font-bold font-augustashadow text-3xl">Hail, weary traveler! </h3>
+          <h3 className="font-bold font-augustashadow text-4xl">Hail, weary traveler! </h3>
           <p className="py-4">
             You have stumbled upon the workshop of The Emerald Keep. In this hallowed forge, hidden deep within the ancient woods, are fashioned arcane conduits of all shapes and sizes, perfect for wielders of magic, adventurers, and seekers of the arcane arts.
             <br /><br />
-            Each staff is carved from sacred woods, imbued with the essence of the earth, sky, and stars. Bound in leathers from elusive beasts and crowned with rare stones, these staves are more than mere tools—they are extensions of the caster’s will, conduits of power capable of channeling the mightiest of spells.
+            Each staff is carved from sacred woods, imbued with the essence of the earth, sky, and stars. Bound in leathers from elusive beasts and crowned with rare stones, these staves are more than mere tools—they are extensions of the caster&apos;s will, conduits of power capable of channeling the mightiest of spells.
             <br /><br />
             Whether you seek a sturdy staff for your next Dungeons & Dragons campaign, a resplendent piece to complete your Renaissance Faire attire, or a relic capable of unleashing forgotten sorceries, The Emerald Keep is sure to have the artifact you seek hidden within it's vaults.
             <br /><br />
