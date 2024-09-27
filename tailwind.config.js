@@ -9,7 +9,8 @@ module.exports = {
                 'grid-pattern': "linear-gradient(to bottom, theme('colors.neutral.950 / 0%'), theme('colors.neutral.950 / 100%')), url('/images/noise.png')"
             },
             colors: {
-                neutral: colors.neutral
+                neutral: colors.neutral,
+                videoOverlay: '#1e2927'
             },
             fontFamily: {
                 blackcastle: ['blackcastle', 'sans-serif'],

@@ -29,25 +29,38 @@ const ctx = getNetlifyContext();
 
 export default function Page() {
     return (
-        <main className="flex flex-col gap-8 sm:gap-16">
-            <section className="flex flex-col items-start gap-3 sm:gap-4">
+        <main className="h-screen w-screen flex flex-col gap-8 sm:gap-16">
+            <section className="fixed h-full w-full flex flex-col items-center justify-center">
+                <div className="relative overflow-hidden w-full h-full">
+                    <video className="w-full h-full object-cover" src="videos/forest.720.mp4" autoPlay muted playsInline loop></video>
+                </div>
+                <div className="absolute top-0 left-0 h-full w-full bg-videoOverlay opacity-80"></div>
+            </section>
+            <section className="h-full flex flex-col items-center justify-center gap-3 sm:gap-4 py-8 z-10">
+                <img className="min-h-0" src="/images/portal.png"></img>
                 <Link
                     href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="btn btn-lg btn-primary font-blackcastle sm:btn-wide"
+                    className="btn-primary btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
-                    Read the Docs
+                    Instagram
                 </Link>
                 <Link
                     href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="btn btn-lg btn-secondary font-blackcastle sm:btn-wide"
+                    className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
-                    Read the Docs
+                    About
                 </Link>
                 <Link
                     href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="btn btn-lg btn-info font-blackcastle sm:btn-wide"
+                    className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
                 >
-                    Read the Docs
+                    Gallery
+                </Link>
+                <Link
+                    href="https://docs.netlify.com/frameworks/next-js/overview/"
+                    className="btn-info btn min-w-48 rounded-full text-2xl btn-lg font-blackcastle sm:btn-wide tracking-wider"
+                >
+                    Events
                 </Link>
             </section>
         </main>
