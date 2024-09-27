@@ -1,15 +1,13 @@
 import Link from 'next/link';
-import { getNetlifyContext } from 'utils';
-
-const ctx = getNetlifyContext();
 
 const PortalShadows = ({ count }) => {
-    const base = 1.2;
+    const base = 1.15;
+    const scaleFactor = 1.0002;
 
     return (
       <>
         {Array.from({ length: count }, (_, i) => {
-          const expScale = Math.pow(base, i);
+          const expScale = Math.pow(base, i) * Math.pow(scaleFactor, i * i);
           const size = expScale * 4;
 
           return (
@@ -25,7 +23,7 @@ const PortalShadows = ({ count }) => {
         })}
       </>
     );
-  };
+};
 
 export default function Page() {
     return (
@@ -35,12 +33,23 @@ export default function Page() {
                     <video className="w-full h-full object-cover" src="videos/forest.720.mp4" autoPlay muted playsInline loop></video>
                 </div>
                 <div className="absolute top-0 left-0 h-full w-full bg-videoOverlay opacity-80"></div>
+                <div className="noise-overlay"></div>
             </section>
             <section className="h-full overflow-hidden flex flex-col items-center justify-center gap-3 sm:gap-4 py-8 z-10">
                 <div className="min-h-0 flex items-center justify-center relative">
                     <PortalShadows count={50} />
-                    <img className="absolute h-full rotating-portal" src="/images/portal-background.png"></img>
-                    <img className="h-full" src="/images/portal.png"></img>
+                    <img
+                        className="absolute h-full rotating-portal"
+                        srcSet="/.netlify/images?url=images/portal-background.png&w=640 640w, /.netlify/images?url=images/portal-background.png&w=1280 1280w, /.netlify/images?url=images/portal-background.png&w=2048 2048w"
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        alt="portal background"
+                    />
+                    <img
+                        className="h-full"
+                        srcSet="/.netlify/images?url=images/portal.png&w=640 640w, /.netlify/images?url=images/portal.png&w=1280 1280w, /.netlify/images?url=images/portal.png&w=2048 2048w"
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        alt="Emerald Keep logo in stone portal"
+                    />
                 </div>
                 <Link
                     href="https://www.instagram.com/theemeraldkeep/"
@@ -49,24 +58,21 @@ export default function Page() {
                 >
                     Instagram
                 </Link>
-                <Link
-                    href="javascript:void(0)"
+                <button
                     className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                 >
                     About
-                </Link>
-                <Link
-                    href="javascript:void(0)"
+                </button>
+                <button
                     className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                 >
                     Gallery
-                </Link>
-                <Link
-                    href="javascript:void(0)"
+                </button>
+                <button
                     className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                 >
                     Events
-                </Link>
+                </button>
             </section>
         </main>
     );
