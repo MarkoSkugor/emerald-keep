@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'blackcastle';
     src: url('/fonts/BlackCastle.woff2') format('woff2'),
-         url('/fonts/BlackCastle.woff') format('woff');
+        url('/fonts/BlackCastle.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'blackcastleshadow';
     src: url('/fonts/BlackCastleShadow.woff2') format('woff2'),
-         url('/fonts/BlackCastleShadow.woff') format('woff');
+        url('/fonts/BlackCastleShadow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'augusta';
     src: url('/fonts/Augusta.woff2') format('woff2'),
-         url('/fonts/Augusta.woff') format('woff');
+        url('/fonts/Augusta.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,7 +31,7 @@
 @font-face {
     font-family: 'augustashadow';
     src: url('/fonts/AugustaShadow.woff2') format('woff2'),
-         url('/fonts/AugustaShadow.woff') format('woff');
+        url('/fonts/AugustaShadow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,8 +54,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vh;
+    height: 100dvh;
+    width: 100dvw;
     background-image: url('/images/noise.svg');
     background-repeat: repeat;
     z-index: 1;
@@ -65,6 +65,7 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }

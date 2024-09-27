@@ -6,29 +6,29 @@ const PortalShadows = ({ count }) => {
     const scaleFactor = 1.0002;
 
     return (
-      <>
-        {Array.from({ length: count }, (_, i) => {
-          const expScale = Math.pow(base, i) * Math.pow(scaleFactor, i * i);
-          const size = expScale * 4;
+        <>
+            {Array.from({ length: count }, (_, i) => {
+                const expScale = Math.pow(base, i) * Math.pow(scaleFactor, i * i);
+                const size = expScale * 4;
 
-          return (
-            <div
-              key={i}
-              className="portal-shadow"
-              style={{
-                width: `${size}rem`,
-                height: `${size}rem`,
-              }}
-            ></div>
-          );
-        })}
-      </>
+                return (
+                    <div
+                        key={i}
+                        className="portal-shadow"
+                        style={{
+                            width: `${size}rem`,
+                            height: `${size}rem`,
+                        }}
+                    ></div>
+                );
+            })}
+        </>
     );
 };
 
 export default function Page() {
     return (
-        <main className="h-screen w-screen flex flex-col gap-8 sm:gap-16">
+        <main className="h-dvh w-dvw flex flex-col gap-8 sm:gap-16">
             <section className="fixed h-full w-full flex flex-col items-center justify-center">
                 <div className="relative overflow-hidden w-full h-full">
                     <video className="w-full h-full object-cover" src="videos/forest.720.mp4" autoPlay muted playsInline loop></video>
