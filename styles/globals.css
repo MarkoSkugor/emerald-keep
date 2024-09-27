@@ -20,35 +20,20 @@
     font-style: normal;
 }
 
-@layer base {
-    :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
-        font-size: 0.9em;
-    }
-
-    h1 {
-        @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl;
-    }
+@font-face {
+    font-family: 'augusta';
+    src: url('/fonts/Augusta.woff2') format('woff2'),
+         url('/fonts/Augusta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-a {
-    @apply underline
-}
-
-.markdown {
-    @apply mb-1;
-}
-
-.alert .markdown {
-    @apply mb-0;
-}
-
-.markdown p {
-    @apply mb-3;
-}
-
-.btn:disabled {
-    @apply text-neutral-400 bg-neutral-700;
+@font-face {
+    font-family: 'augustashadow';
+    src: url('/fonts/AugustaShadow.woff2') format('woff2'),
+         url('/fonts/AugustaShadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .portal-shadow {

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AboutModal from "../components/AboutModal";
 
 const PortalShadows = ({ count }) => {
     const base = 1.15;
@@ -58,11 +59,7 @@ export default function Page() {
                 >
                     Instagram
                 </Link>
-                <button
-                    className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
-                >
-                    About
-                </button>
+                <AboutModal></AboutModal>
                 <button
                     className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                 >
