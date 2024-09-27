@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import AboutModal from "../components/AboutModal";
+import AboutModal from 'components/AboutModal';
+import EventsModal from 'components/EventsModal';
 
 const PortalShadows = ({ count }) => {
     const base = 1.15;
@@ -65,11 +66,7 @@ export default function Page() {
                 >
                     Gallery
                 </button>
-                <button
-                    className="btn-info btn min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
-                >
-                    Events
-                </button>
+                <EventsModal></EventsModal>
             </section>
         </main>
     );

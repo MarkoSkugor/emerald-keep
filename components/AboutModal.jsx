@@ -11,7 +11,7 @@ const AboutModal = () => {
       </button>
 
       <dialog id="about-modal" className="modal modal-bottom sm:modal-middle ">
-        <div className="modal-box font-augusta bg-stone-900 text-stone-100">
+        <div className="modal-box font-augusta bg-stone-900 text-stone-100 min-h-75dvh">
           <h3 className="font-bold font-augustashadow text-4xl">Hail, Weary Traveler! </h3>
           <p className="py-4">
             You have stumbled upon the workshop of The Emerald Keep. In this hallowed forge, hidden deep within the ancient woods, are fashioned arcane conduits of all shapes and sizes, perfect for wielders of magic, adventurers, and seekers of the arcane arts.
