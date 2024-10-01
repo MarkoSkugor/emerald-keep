@@ -41,7 +41,7 @@ const GalleryModal = () => {
 
                 {selectedImage && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
-                        <div className="relative">
+                        <div className="relative w-full">
                             <button className="btn btn-md btn-circle btn-outline absolute right-2 top-2 text-white bg-black border-zinc-400 hover:border-zinc-400" onClick={closeModal}>✕</button>
                             <img
                                 srcSet={`/.netlify/images?url=images/${selectedImage}&w=640 640w, /.netlify/images?url=images/${selectedImage}&w=1280 1280w, /.netlify/images?url=images/${selectedImage}&w=2048 2048w`}
