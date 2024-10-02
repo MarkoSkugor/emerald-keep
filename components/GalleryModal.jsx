@@ -19,9 +19,9 @@ const GalleryModal = () => {
             </button>
 
             <dialog id="gallery-modal" className="modal modal-bottom sm:modal-middle ">
-                <div className="modal-box font-augusta bg-stone-900 text-stone-100 min-h-75dvh">
+                <div className="modal-box flex flex-col overflow-hidden font-augusta bg-stone-900 text-stone-100 min-h-75dvh">
                     <h3 className="font-bold font-augustashadow text-4xl">Gallery</h3>
-                    <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="mt-4 p-2 overflow-y-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                         {data.map((image) => (
                             <div key={image.id} className="relative">
                                 <img

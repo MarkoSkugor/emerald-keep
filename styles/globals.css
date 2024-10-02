@@ -36,6 +36,10 @@
     font-style: normal;
 }
 
+html {
+    scrollbar-gutter: auto !important;
+}
+
 .modal-box {
     max-height: calc(100dvh - 5em);
 }
