@@ -35,14 +35,14 @@ const GalleryModal = () => {
                         ))}
                     </div>
                     <form method="dialog">
-                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        <button className="btn btn-sm btn-circle btn-ghost fixed right-2 top-2">✕</button>
                     </form>
                 </div>
 
                 {selectedImage && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
+                    <div className="fixed w-dvw h-dvh z-50 flex items-center justify-center bg-black bg-opacity-80">
                         <div className="relative w-full">
-                            <button className="btn btn-md btn-circle btn-outline absolute right-2 top-2 text-white bg-black border-zinc-400 hover:border-zinc-400" onClick={closeModal}>✕</button>
+                            <button className="btn btn-md btn-circle btn-outline fixed right-2 top-2 text-white bg-black border-zinc-400 hover:border-zinc-400" onClick={closeModal}>✕</button>
                             <img
                                 srcSet={`/.netlify/images?url=images/${selectedImage}&w=640 640w, /.netlify/images?url=images/${selectedImage}&w=1280 1280w, /.netlify/images?url=images/${selectedImage}&w=2048 2048w`}
                                 sizes="(max-width: 1024px) 100vw, 1024px"

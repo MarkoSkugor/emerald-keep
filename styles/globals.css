@@ -36,6 +36,10 @@
     font-style: normal;
 }
 
+.modal-box {
+    max-height: calc(100dvh - 5em);
+}
+
 .portal-shadow {
     position: absolute;
     border-radius: 50%;
@@ -51,7 +55,7 @@
 }
 
 .noise-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100dvh;

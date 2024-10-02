@@ -35,7 +35,7 @@ export default function Page() {
                 <div className="relative overflow-hidden w-full h-full">
                     <video className="w-full h-full object-cover" src="videos/forest.720.mp4" autoPlay muted playsInline loop></video>
                 </div>
-                <div className="absolute top-0 left-0 h-full w-full bg-videoOverlay opacity-80"></div>
+                <div className="fixed top-0 left-0 h-full w-full bg-videoOverlay opacity-80"></div>
                 <div className="noise-overlay"></div>
             </section>
             <section className="h-full overflow-hidden flex flex-col items-center justify-center gap-3 sm:gap-4 py-8 z-10">
