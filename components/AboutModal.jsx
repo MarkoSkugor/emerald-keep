@@ -12,7 +12,7 @@ const AboutModal = () => {
 
       <dialog id="about-modal" className="modal modal-bottom sm:modal-middle ">
         <div className="modal-box font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
-          <h3 className="font-bold font-berryrotunda text-2xl">Hail, Weary Traveler! </h3>
+          <h3 className="font-bold font-berryrotunda text-2xl pr-6">Hail, Weary Traveler! </h3>
           <p className="py-4 text-sm">
             You have stumbled upon the workshop of The Emerald Keep, where I make wizard staffs using locally sourced wood and materials out of Columbus, OH. Although I&apos;m not currently offering shipping, I do hope to see you at a renaissance faire or other medieval themed event soon!
             <br /><br />

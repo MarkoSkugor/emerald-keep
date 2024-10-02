@@ -20,7 +20,7 @@ const GalleryModal = () => {
 
             <dialog id="gallery-modal" className="modal modal-bottom sm:modal-middle ">
                 <div className="modal-box flex flex-col overflow-hidden font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
-                    <h3 className="font-bold font-berryrotunda text-2xl">Gallery</h3>
+                    <h3 className="font-bold font-berryrotunda text-2xl pr-6">Gallery</h3>
                     <div className="mt-4 p-2 overflow-y-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                         {data.map((image) => (
                             <div key={image.id} className="relative">

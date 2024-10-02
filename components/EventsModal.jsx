@@ -12,7 +12,7 @@ const EventsModal = () => {
 
       <dialog id="events-modal" className="modal modal-bottom sm:modal-middle ">
         <div className="modal-box font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
-          <h3 className="font-bold font-berryrotunda text-2xl">Events</h3>
+          <h3 className="font-bold font-berryrotunda text-2xl pr-6">Events</h3>
           <p className="py-4 text-sm">
             Coming Soon!
           </p>
