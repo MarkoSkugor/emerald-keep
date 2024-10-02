@@ -14,7 +14,7 @@ const AboutModal = () => {
         <div className="modal-box font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
           <h3 className="font-bold font-berryrotunda text-2xl">Hail, Weary Traveler! </h3>
           <p className="py-4 text-sm">
-            You have stumbled upon the workshop of The Emerald Keep, where I make wizard staffs using locally sourced wood and materials out of Columbus, OH. Although I'm not currently offering shipping, I do hope to see you at a renaissance faire or other medieval themed event soon!
+            You have stumbled upon the workshop of The Emerald Keep, where I make wizard staffs using locally sourced wood and materials out of Columbus, OH. Although I&apos;m not currently offering shipping, I do hope to see you at a renaissance faire or other medieval themed event soon!
             <br /><br />
             Each staff is carved from sacred woods, imbued with the essence of the earth, sky, and stars. Bound in leathers from elusive beasts and crowned with rare stones, these staves are extensions of the caster&apos;s will — conduits of arcane power capable of channeling the most ancient of spells. They also look cool.
             <br /><br />
