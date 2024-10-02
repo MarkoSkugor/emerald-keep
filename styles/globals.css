@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,7 +18,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'augusta';
     src: url('/fonts/Augusta.woff2') format('woff2'),
         url('/fonts/Augusta.woff') format('woff');
@@ -32,6 +30,14 @@
     font-family: 'augustashadow';
     src: url('/fonts/AugustaShadow.woff2') format('woff2'),
         url('/fonts/AugustaShadow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'berryrotunda';
+    src: url('/fonts/BerryRotunda.woff2') format('woff2'),
+        url('/fonts/BerryRotunda.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

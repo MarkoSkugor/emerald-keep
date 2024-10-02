@@ -11,12 +11,12 @@ const AboutModal = () => {
       </button>
 
       <dialog id="about-modal" className="modal modal-bottom sm:modal-middle ">
-        <div className="modal-box font-augusta bg-stone-900 text-stone-100 min-h-75dvh">
-          <h3 className="font-bold font-augustashadow text-4xl">Hail, Weary Traveler! </h3>
-          <p className="py-4">
-            You have stumbled upon the workshop of The Emerald Keep. In this hallowed forge, hidden deep within the ancient woods (my garage in Columbus, OH), are fashioned arcane conduits of all shapes and sizes, perfect for wielders of magic, adventurers, and seekers of the arcane arts (aka nerds).
+        <div className="modal-box font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
+          <h3 className="font-bold font-berryrotunda text-2xl">Hail, Weary Traveler! </h3>
+          <p className="py-4 text-sm">
+            You have stumbled upon the workshop of The Emerald Keep, where I make wizard staffs using locally sourced wood and materials out of Columbus, OH. Although I'm not currently offering shipping, I do hope to see you at a renaissance faire or other medieval themed event soon!
             <br /><br />
-            Each staff is carved from sacred woods, imbued with the essence of the earth, sky, and stars. Bound in leathers from elusive beasts and crowned with rare stones (salvaged leather and whatever cool stuff I can find on the internet or at thrift stores), these staves are more than mere tools—they are extensions of the caster&apos;s will, conduits of power capable of channeling the mightiest of spells (they also look really cool I think!).
+            Each staff is carved from sacred woods, imbued with the essence of the earth, sky, and stars. Bound in leathers from elusive beasts and crowned with rare stones, these staves are extensions of the caster&apos;s will — conduits of arcane power capable of channeling the most ancient of spells. They also look cool.
             <br /><br />
             - The Keeper
           </p>

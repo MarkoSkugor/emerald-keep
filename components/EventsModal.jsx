@@ -11,9 +11,9 @@ const EventsModal = () => {
       </button>
 
       <dialog id="events-modal" className="modal modal-bottom sm:modal-middle ">
-        <div className="modal-box font-augusta bg-stone-900 text-stone-100 min-h-75dvh">
-          <h3 className="font-bold font-augustashadow text-4xl">Events</h3>
-          <p className="py-4">
+        <div className="modal-box font-berryrotunda bg-stone-900 text-stone-100 min-h-75dvh">
+          <h3 className="font-bold font-berryrotunda text-2xl">Events</h3>
+          <p className="py-4 text-sm">
             Coming Soon!
           </p>
           <form method="dialog">

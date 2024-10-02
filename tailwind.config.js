@@ -14,8 +14,9 @@ module.exports = {
             fontFamily: {
                 blackcastle: ['blackcastle', 'sans-serif'],
                 blackcastleshadow: ['blackcastleshadow', 'sans-serif'],
-                augusta: ['augusta', 'sans-serif'],
-                augustashadow: ['augustashadow', 'sans-serif'],
+                // augusta: ['augusta', 'sans-serif'],
+                // augustashadow: ['augustashadow', 'sans-serif'],
+                berryrotunda: ['berryrotunda', 'sans-serif'],
             },
         }
     },
