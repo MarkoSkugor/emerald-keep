@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AboutModal from 'components/AboutModal';
 import EventsModal from 'components/EventsModal';
 import GalleryModal from 'components/GalleryModal';
+import SynthModal from 'components/SynthModal';
 
 const PortalShadows = ({ count }) => {
     const base = 1.15;
@@ -53,6 +54,7 @@ export default function Page() {
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         alt="Emerald Keep logo in stone portal"
                     />
+                    <SynthModal></SynthModal>
                 </div>
                 <Link
                     href="https://www.instagram.com/theemeraldkeep/"
