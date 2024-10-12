@@ -64,6 +64,18 @@ html {
     z-index: -1;
 }
 
+.rotating-portal.full {
+    animation: rotate 200s linear infinite;
+    width: max(110dvw, 110dvh);
+    height: max(110dvw, 110dvh);
+    max-width: unset;
+    z-index: unset;
+}
+
+.rotating-portal.slow {
+    animation: rotate-offset 220s linear infinite;
+}
+
 .noise-overlay {
     position: fixed;
     top: 0;
@@ -107,5 +119,15 @@ html {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-offset {
+    0% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
     }
 }
