@@ -50,6 +50,7 @@ export default function Page() {
                     sizes="(max-width: 1024px) 100vw, 1024px"
                     alt="portal background black"
                 />
+                <div className="synth-overlay"></div>
                 <Synth></Synth>
             </div>
         );

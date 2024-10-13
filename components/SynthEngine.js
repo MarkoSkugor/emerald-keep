@@ -5,7 +5,7 @@ class SynthEngine {
         level: 1,
       },
       oscillator: {
-        waveForm: 'sine',
+        waveForm: 'sawtooth',
       },
       amp: {
         attack: 0.1,

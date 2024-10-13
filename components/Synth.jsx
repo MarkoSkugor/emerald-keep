@@ -8,7 +8,7 @@ import { WaveSelector } from './WaveSelector';
 
 const Synth = () => {
     const [started, setStarted] = useState(false);
-    const [waveForm, setWaveform] = useState('sine');
+    const [waveForm, setWaveform] = useState('sawtooth');
     const [startingOctave, setStartingOctave] = useState(3);
     const [synthEngine, setSynthEngine] = useState(null);
     const [scale, setScale] = useState([]);
