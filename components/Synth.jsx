@@ -37,12 +37,15 @@ const Synth = () => {
 
     return (
         <>
-            <TeethKeyboard
-                numOctaves={1}
-                startingOctave={startingOctave}
-                onKeyPressed={onKeyPressed}
-            >
-            </TeethKeyboard>
+            <div className="flex flex-col z-10 items-center justify-center gap-4">
+                <img className="w-96" srcSet={`/.netlify/images?url=images/skull.png&w=640 640w, /.netlify/images?url=images/skull.png&w=1280 1280w, /.netlify/images?url=images/skull.png&w=2048 2048w`} />
+                <TeethKeyboard
+                    numOctaves={1}
+                    startingOctave={startingOctave}
+                    onKeyPressed={onKeyPressed}
+                >
+                </TeethKeyboard>
+            </div>
         </>
     );
 };
