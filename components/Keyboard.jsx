@@ -14,10 +14,6 @@ const KEY_MAP = {
     h: 'a',
     u: 'aSharp',
     j: 'b',
-    k: 'c',
-    o: 'cSharp',
-    l: 'd',
-    p: 'dSharp',
 };
 
 const Keyboard = ({ numOctaves = 1, startingOctave = 2, onKeyPressed }) => {

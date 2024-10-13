@@ -37,7 +37,7 @@ const Synth = () => {
     return (
         <>
             <Keyboard
-                numOctaves={2}
+                numOctaves={1}
                 startingOctave={startingOctave}
                 onKeyPressed={onKeyPressed}
             >

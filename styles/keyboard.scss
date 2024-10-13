@@ -18,6 +18,7 @@ $keyboard-height: 200;
 
     >* {
         position: absolute;
+        border-radius: 0 0 8px 8px;
 
         &:nth-child(1),
         &:nth-child(3),
@@ -38,7 +39,7 @@ $keyboard-height: 200;
 
             &.active,
             &:active {
-                background: #71AF4B;
+                background: #DBCFB0;
             }
 
             &:not(:last-child) {
@@ -62,7 +63,7 @@ $keyboard-height: 200;
 
             &.active,
             &:active {
-                background: #71AF4B;
+                background: #DBCFB0;
             }
         }
 
