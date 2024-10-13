@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./keyboard.scss";
+
 @font-face {
     font-family: 'blackcastle';
     src: url('/fonts/BlackCastle.woff2') format('woff2'),
@@ -66,8 +68,8 @@ html {
 
 .rotating-portal.full {
     animation: rotate 200s linear infinite;
-    width: max(110dvw, 110dvh);
-    height: max(110dvw, 110dvh);
+    width: max(120dvw, 120dvh);
+    height: max(120dvw, 120dvh);
     max-width: unset;
     z-index: unset;
 }

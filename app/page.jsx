@@ -1,8 +1,11 @@
+"use client";
 import Link from 'next/link';
+import React, { useState } from 'react';
 import AboutModal from 'components/AboutModal';
 import EventsModal from 'components/EventsModal';
 import GalleryModal from 'components/GalleryModal';
-import SynthModal from 'components/SynthModal';
+import EnterPortalModal from 'components/EnterPortalModal';
+import Synth from 'components/Synth';
 
 const PortalShadows = ({ count }) => {
     const base = 1.15;
@@ -30,6 +33,28 @@ const PortalShadows = ({ count }) => {
 };
 
 export default function Page() {
+    const [isPortalEntered, setIsPortalEntered] = useState(false);
+
+    if (isPortalEntered) {
+        return (
+            <div className="flex flex-col h-dvh w-dvw items-center justify-center overflow-hidden bg-primary relative">
+                <img
+                    className="absolute rotating-portal full"
+                    srcSet="/.netlify/images?url=images/swirls-red.png&w=640 640w, /.netlify/images?url=images/swirls-red.png&w=1280 1280w, /.netlify/images?url=images/swirls-red.png&w=2048 2048w"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                    alt="portal background red"
+                />
+                <img
+                    className="absolute rotating-portal slow full"
+                    srcSet="/.netlify/images?url=images/swirls-black.png&w=640 640w, /.netlify/images?url=images/swirls-black.png&w=1280 1280w, /.netlify/images?url=images/swirls-black.png&w=2048 2048w"
+                    sizes="(max-width: 1024px) 100vw, 1024px"
+                    alt="portal background black"
+                />
+                <Synth></Synth>
+            </div>
+        );
+    }
+
     return (
         <main className="h-dvh w-dvw flex flex-col gap-8 sm:gap-16">
             <section className="fixed h-full w-full flex flex-col items-center justify-center">
@@ -54,7 +79,7 @@ export default function Page() {
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         alt="Emerald Keep logo in stone portal"
                     />
-                    <SynthModal></SynthModal>
+                    <EnterPortalModal enterPortal={setIsPortalEntered}></EnterPortalModal>
                 </div>
                 <Link
                     href="https://www.instagram.com/theemeraldkeep/"

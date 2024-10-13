@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { Keyboard } from './Keyboard';
 import { Octave } from './Octave';
 import { SynthEngine } from './SynthEngine';
 
@@ -35,7 +36,12 @@ const Synth = () => {
 
     return (
         <>
-            <button className="z-10 text-white" onClick={() => onKeyPressed(3, 'c')}>play note</button>
+            <Keyboard
+                numOctaves={2}
+                startingOctave={startingOctave}
+                onKeyPressed={onKeyPressed}
+            >
+            </Keyboard>
         </>
     );
 };

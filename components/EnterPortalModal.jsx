@@ -1,6 +1,6 @@
 "use client";
 
-const SynthModal = () => {
+const EnterPortalModal = ({ enterPortal }) => {
     return (
         <>
             <button onClick={() => document.getElementById('synth-modal').showModal()} className="enter-portal-button"></button>
@@ -8,12 +8,12 @@ const SynthModal = () => {
             <dialog id="synth-modal" className="modal synth-modal text-stone-100">
                 <div className="dark-shadow flex flex-col gap-4 justify-center items-center">
                     <h3 className="font-bold font-berryrotunda text-2xl pb-6 red-shadow">Enter the portal?</h3>
-                    <a
-                        href="/portal"
+                    <button
+                        onClick={enterPortal}
                         className="btn-outline btn-secondary btn bg-black dark-shadow min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                     >
                         Yes
-                    </a>
+                    </button>
                     <form method="dialog">
                         <button
                             className="btn-outline btn-secondary btn bg-black dark-shadow min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
@@ -27,4 +27,4 @@ const SynthModal = () => {
     );
 };
 
-export default SynthModal;
+export default EnterPortalModal;
