@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { Keyboard } from './Keyboard';
+import { TeethKeyboard } from './TeethKeyboard';
 import { Octave } from './Octave';
 import { SynthEngine } from './SynthEngine';
 
@@ -36,12 +37,12 @@ const Synth = () => {
 
     return (
         <>
-            <Keyboard
+            <TeethKeyboard
                 numOctaves={1}
                 startingOctave={startingOctave}
                 onKeyPressed={onKeyPressed}
             >
-            </Keyboard>
+            </TeethKeyboard>
         </>
     );
 };
