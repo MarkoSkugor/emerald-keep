@@ -4,10 +4,11 @@ import { Keyboard } from './Keyboard';
 import { TeethKeyboard } from './TeethKeyboard';
 import { Octave } from './Octave';
 import { SynthEngine } from './SynthEngine';
+import { WaveSelector } from './WaveSelector';
 
 const Synth = () => {
     const [started, setStarted] = useState(false);
-    const [waveForm, setWaveform] = useState('square');
+    const [waveForm, setWaveform] = useState('sine');
     const [startingOctave, setStartingOctave] = useState(3);
     const [synthEngine, setSynthEngine] = useState(null);
     const [scale, setScale] = useState([]);
@@ -17,6 +18,12 @@ const Synth = () => {
         setSynthEngine(new SynthEngine());
         initializeScale();
     }, []);
+
+    useEffect(() => {
+        if (synthEngine) {
+            synthEngine.setWaveForm(waveForm);
+        }
+    }, [waveForm]);
 
     const initializeScale = () => {
         const A4 = 440;
@@ -39,6 +46,11 @@ const Synth = () => {
         <>
             <div className="flex flex-col z-10 items-center justify-center gap-4">
                 <img className="w-96" srcSet={`/.netlify/images?url=images/skull.png&w=640 640w, /.netlify/images?url=images/skull.png&w=1280 1280w, /.netlify/images?url=images/skull.png&w=2048 2048w`} />
+                <WaveSelector
+                    selectWaveform={setWaveform}
+                    selectedWaveform={waveForm}
+                >
+                </WaveSelector>
                 <TeethKeyboard
                     numOctaves={1}
                     startingOctave={startingOctave}

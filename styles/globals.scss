@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "./keyboard.scss";
+@import "./skull.scss";
 @import "./teeth-keyboard.scss";
 
 @font-face {
@@ -133,4 +134,8 @@ html {
     100% {
         transform: rotate(359deg);
     }
+}
+
+:focus {
+    outline: none;
 }

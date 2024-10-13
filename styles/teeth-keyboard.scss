@@ -6,6 +6,7 @@ $keyboard-height: 250;
 .teeth-keyboard__container {
     display: flex;
     height: #{$keyboard-height}px;
+    padding-left: .5rem;
 }
 
 .teeth-keyboard__octave {

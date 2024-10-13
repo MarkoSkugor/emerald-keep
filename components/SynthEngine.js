@@ -5,7 +5,7 @@ class SynthEngine {
         level: 1,
       },
       oscillator: {
-        waveForm: 'square',
+        waveForm: 'sine',
       },
       amp: {
         attack: 0.1,
