@@ -1,0 +1,31 @@
+$knob-shadow: #de312f;
+
+.knob {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border: 2px solid #222;
+    background-color: #222;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(-150deg);
+    backface-visibility: hidden;
+    transition: background-color 0.1s linear;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 50%;
+        background-color: #328774;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+}
+
+.knob-shadow {
+    filter: drop-shadow(4px 0px 1px $knob-shadow) drop-shadow(-4px 0px 1px $knob-shadow);
+}

@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { Keyboard } from './Keyboard';
+import { Knob } from './Knob';
 import { TeethKeyboard } from './TeethKeyboard';
 import { Octave } from './Octave';
+import { OctaveButton } from './OctaveButton';
 import { SynthEngine } from './SynthEngine';
 import { WaveSelector } from './WaveSelector';
 
@@ -10,6 +11,7 @@ const Synth = () => {
     const [started, setStarted] = useState(false);
     const [waveForm, setWaveform] = useState('sawtooth');
     const [startingOctave, setStartingOctave] = useState(3);
+    const [filterCutoff, setFilterCutoff] = useState(350);
     const [synthEngine, setSynthEngine] = useState(null);
     const [scale, setScale] = useState([]);
 
@@ -24,6 +26,12 @@ const Synth = () => {
             synthEngine.setWaveForm(waveForm);
         }
     }, [waveForm]);
+
+    useEffect(() => {
+        if (synthEngine) {
+            synthEngine.setFilterCutoff(filterCutoff);
+        }
+    }, [filterCutoff]);
 
     const initializeScale = () => {
         const A4 = 440;
@@ -45,7 +53,34 @@ const Synth = () => {
     return (
         <>
             <div className="flex flex-col z-10 items-center justify-center gap-4">
-                <img className="w-96" srcSet={`/.netlify/images?url=images/skull.png&w=640 640w, /.netlify/images?url=images/skull.png&w=1280 1280w, /.netlify/images?url=images/skull.png&w=2048 2048w`} />
+                <div className="flex justify-center items-center">
+                    <img className="w-96 skull" srcSet={`/.netlify/images?url=images/skull.png&w=640 640w, /.netlify/images?url=images/skull.png&w=1280 1280w, /.netlify/images?url=images/skull.png&w=2048 2048w`} />
+                    <div className="flex flex-col gap-4 justify-center items-center absolute pl-4 pb-28">
+                        <OctaveButton
+                            direction="up"
+                            disabled={startingOctave === 7}
+                            onClick={() => setStartingOctave(startingOctave + 1)}
+                            aria-label='octave up'
+                        >
+                        </OctaveButton>
+                        <div class="knob-shadow">
+                            <Knob
+                                precision={0}
+                                initialValue={350}
+                                minValue={20}
+                                maxValue={15000}
+                                valueChanged={setFilterCutoff}
+                            ></Knob>
+                        </div>
+                        <OctaveButton
+                            direction="down"
+                            disabled={startingOctave === 0}
+                            onClick={() => setStartingOctave(startingOctave - 1)}
+                            aria-label='octave down'
+                        >
+                        </OctaveButton>
+                    </div>
+                </div>
                 <WaveSelector
                     selectWaveform={setWaveform}
                     selectedWaveform={waveForm}

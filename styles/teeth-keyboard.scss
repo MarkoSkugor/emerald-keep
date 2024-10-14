@@ -2,6 +2,7 @@ $white-key-width: 40;
 $black-key-width: 40;
 $key-height: 120;
 $keyboard-height: 250;
+$teeth-shadow: #de312f;
 
 .teeth-keyboard__container {
     display: flex;
@@ -21,6 +22,7 @@ $keyboard-height: 250;
 
     >* {
         position: absolute;
+        filter: drop-shadow(3px -3px 1px $eye-shadow) drop-shadow(-3px 3px 1px $teeth-shadow);
 
         &:hover {
             img {

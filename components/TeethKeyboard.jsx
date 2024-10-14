@@ -87,6 +87,7 @@ const TeethKeyboard = ({ numOctaves = 1, startingOctave = 2, onKeyPressed }) => 
     );
 
     const keyboardOctaves = [];
+
     for (let i = 0; i < numOctaves; i++) {
         keyboardOctaves.push(renderKeyboardOctave(i + startingOctave));
     }
