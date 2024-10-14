@@ -1,9 +1,11 @@
 "use client";
+
 import React, { useEffect, useState } from 'react';
 import { Knob } from './Knob';
 import { TeethKeyboard } from './TeethKeyboard';
 import { Octave } from './Octave';
 import { OctaveButton } from './OctaveButton';
+import { PortalAudioConfirmation } from './PortalAudioConfirmation';
 import { SynthEngine } from './SynthEngine';
 import { WaveSelector } from './WaveSelector';
 
@@ -93,6 +95,7 @@ const Synth = () => {
                 >
                 </TeethKeyboard>
             </div>
+            <PortalAudioConfirmation audioContext={synthEngine?.audioContext} />
         </>
     );
 };

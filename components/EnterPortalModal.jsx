@@ -10,13 +10,13 @@ const EnterPortalModal = ({ enterPortal }) => {
                     <h3 className="font-bold font-berryrotunda text-2xl pb-6 red-shadow">Enter the portal?</h3>
                     <button
                         onClick={enterPortal}
-                        className="btn-outline btn-secondary btn bg-black dark-shadow min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
+                        className="btn-outline btn-secondary btn bg-black min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                     >
                         Yes
                     </button>
                     <form method="dialog">
                         <button
-                            className="btn-outline btn-secondary btn bg-black dark-shadow min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
+                            className="btn-outline btn-secondary btn bg-black min-w-48 rounded-full text-4xl btn-lg font-blackcastleshadow sm:btn-wide tracking-wider"
                         >
                             No
                         </button>
