@@ -1,9 +1,9 @@
 $shadow-color: #328774;
 $button-color: #222;
-$button-color-disabled: #dbcda5;
+$button-color-disabled: #cfc9b3;
 $octave-button-shadow: #de312f;
 $drop-shadow-active: drop-shadow(-1px 1px 0px $shadow-color) drop-shadow(-1px 1px 0px $shadow-color) drop-shadow(2px 0px 1px $octave-button-shadow) drop-shadow(-2px 0px 1px $octave-button-shadow);
-$drop-shadow-disabled: drop-shadow(0px 0px 0px $shadow-color) drop-shadow(0px 0px 0px $shadow-color);
+$drop-shadow-disabled: drop-shadow(0px 0px 1px black);
 $drop-shadow-pressed: drop-shadow(2px 0px 1px $octave-button-shadow) drop-shadow(-2px 0px 1px $octave-button-shadow);
 
 .octave-button {
