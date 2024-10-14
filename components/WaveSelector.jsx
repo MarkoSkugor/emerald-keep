@@ -2,7 +2,7 @@
 
 const WaveSelector = ({ selectWaveform, selectedWaveform }) => {
     return (
-        <div className="flex gap-10 pl-4 -mt-16">
+        <div className="flex gap-10 pl-2 -mt-10">
             <div className="flex flex-col">
                 <button
                     className={`${selectedWaveform == 'sawtooth' ? 'active' : ''} flex relative waveform-selector`}
