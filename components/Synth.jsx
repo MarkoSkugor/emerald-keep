@@ -63,7 +63,7 @@ const Synth = () => {
                             aria-label='octave up'
                         >
                         </OctaveButton>
-                        <div class="knob-shadow">
+                        <div className="knob-shadow">
                             <Knob
                                 precision={0}
                                 initialValue={350}
