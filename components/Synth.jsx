@@ -21,7 +21,6 @@ const Synth = () => {
         setStarted(true);
         setSynthEngine(new SynthEngine());
         initializeScale();
-        console.log('setting synth engine');
     }, []);
 
     useEffect(() => {
