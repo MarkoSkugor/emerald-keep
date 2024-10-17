@@ -21,6 +21,7 @@ const Synth = () => {
         setStarted(true);
         setSynthEngine(new SynthEngine());
         initializeScale();
+        console.log('setting synth engine');
     }, []);
 
     useEffect(() => {
@@ -56,7 +57,7 @@ const Synth = () => {
         <>
             <div className="flex flex-col z-10 items-center justify-center">
                 <div className="flex justify-center items-center">
-                    <img className="w-80 skull" srcSet={`/.netlify/images?url=images/skull.png&w=640 640w, /.netlify/images?url=images/skull.png&w=1280 1280w, /.netlify/images?url=images/skull.png&w=2048 2048w`} />
+                    <img className="w-80 skull" srcSet={`/.netlify/images?url=images/skull.webp&w=640 640w, /.netlify/images?url=images/skull.webp&w=1280 1280w, /.netlify/images?url=images/skull.webp&w=2048 2048w`} />
                     <div className="flex flex-col gap-4 justify-center items-center absolute pl-3 pb-20">
                         <OctaveButton
                             direction="up"

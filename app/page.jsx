@@ -40,13 +40,13 @@ export default function Page() {
             <div className="flex flex-col h-dvh w-dvw items-center justify-center overflow-hidden bg-primary relative">
                 <img
                     className="absolute rotating-portal full"
-                    srcSet="/.netlify/images?url=images/swirls-red.png&w=640 640w, /.netlify/images?url=images/swirls-red.png&w=1280 1280w, /.netlify/images?url=images/swirls-red.png&w=2048 2048w"
+                    srcSet="/.netlify/images?url=images/swirls-red.webp&w=640 640w, /.netlify/images?url=images/swirls-red.webp&w=1280 1280w, /.netlify/images?url=images/swirls-red.webp&w=2048 2048w"
                     sizes="(max-width: 1024px) 100vw, 1024px"
                     alt="portal background red"
                 />
                 <img
                     className="absolute rotating-portal slow full"
-                    srcSet="/.netlify/images?url=images/swirls-black.png&w=640 640w, /.netlify/images?url=images/swirls-black.png&w=1280 1280w, /.netlify/images?url=images/swirls-black.png&w=2048 2048w"
+                    srcSet="/.netlify/images?url=images/swirls-black.webp&w=640 640w, /.netlify/images?url=images/swirls-black.webp&w=1280 1280w, /.netlify/images?url=images/swirls-black.webp&w=2048 2048w"
                     sizes="(max-width: 1024px) 100vw, 1024px"
                     alt="portal background black"
                 />
@@ -70,13 +70,13 @@ export default function Page() {
                     <PortalShadows count={50} />
                     <img
                         className="absolute h-full rotating-portal"
-                        srcSet="/.netlify/images?url=images/portal-background.png&w=640 640w, /.netlify/images?url=images/portal-background.png&w=1280 1280w, /.netlify/images?url=images/portal-background.png&w=2048 2048w"
+                        srcSet="/.netlify/images?url=images/portal-background.webp&w=640 640w, /.netlify/images?url=images/portal-background.webp&w=1280 1280w, /.netlify/images?url=images/portal-background.webp&w=2048 2048w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         alt="portal background"
                     />
                     <img
                         className="h-full"
-                        srcSet="/.netlify/images?url=images/portal.png&w=640 640w, /.netlify/images?url=images/portal.png&w=1280 1280w, /.netlify/images?url=images/portal.png&w=2048 2048w"
+                        srcSet="/.netlify/images?url=images/portal.webp&w=640 640w, /.netlify/images?url=images/portal.webp&w=1280 1280w, /.netlify/images?url=images/portal.webp&w=2048 2048w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         alt="Emerald Keep logo in stone portal"
                     />
